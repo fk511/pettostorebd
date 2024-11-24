@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Fahadin Developer</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="shortcut icon" href="https://play-lh.googleusercontent.com/ye3apV1gnIv6VThoz_gT2sQXzskgLYOsQWrXdydaR6gfB11yr5UaSStq6j4C74luusc=s94-rw">
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Modak&display=swap" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="css/contactstyle.css">
+    <link href="css/agency.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/productstyle.css">
+    <style>
+        .fixImg{
+            display: block;
+            width: 100%;
+        }
+
+
+
+    </style>
+
+</head>
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav id="mainNavs" class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header ">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand bagel-fat-one-regular" href="index.html">Petto Store BD</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <!-- <li>
+                        <a class="page-scroll" href="#services">Services</a>
+                    </li> -->
+                    <li class="dropdown">
+                        <a class="page-scroll dropbtn">Categories
+                            <div class="dropdown-content">
+                                <a href="#">Cat</a>
+                                <a href="#">Dog</a>
+                                <a href="#">Aminal</a>
+                                <a href="#">Bird</a>
+                            </div>
+                        </a>
+                    </li>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="product.html">Care</a>
+                    </li>
+                    <!-- <li>
+                        <a class="page-scroll" href="product.html">Product</a>
+                    </li> -->
+<!--                     <li>
+                        <a class="page-scroll" href="#team">Team</a>
+                    </li> -->
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <!-- <header>
+        <div class="container">
+            <div class="intro-text">
+                <h2>FahadIn Developer</h2>
+                <div class="intro-heading">Welcome</div>
+                <div class="intro-lead-in">Our main objective is to make customers happy.</div>
+                <a href="#services" class="page-scroll btn btn-xl SeeMore">
+                    See More 
+                </a>
+                <div class="arrow-down"></div>
+            </div>
+        </div>
+    </header> -->
+
+
+    <div class="main">
+        <div class="containerLine">
+            <h1>Product Filter and Search</h1>
+
+            <div class="filters">
+                <button data-category="all">All</button>
+                <button data-category="T-Shirt">T-Shirt</button>
+                <button data-category="Short">Short</button>
+                <button data-category="Pants">Pants</button>
+                <button data-category="Shoes">Shoes</button>
+                <button data-category="Jecket">Jecket</button>
+                <select id="sortOrder">
+                    <option value="">Sort by</option>
+                    <option value="lowest">Lowest Price</option>
+                    <option value="highest">Highest Price</option>
+                </select>
+                <input type="text" id="searchProduct" placeholder="Search product">
+            </div>
+
+            <div class="products">
+                <!-- Products will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Script JS -->
+    <script src="js/productscript.js"></script>
+
+
+
+
+
+    <!-- Services Section -->
+    <!-- <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Our Services</h2>
+                    <h3 class="section-subheading text-muted">Come, see, enjoy our service</h3>
+                </div>
+            </div>
+            <div class="row text-center all-services">
+                <a class="col-md-4 shd-box page-scroll" href="#contact">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fas fa-palette fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Graphic Design</h4>
+                    <p class="text-muted">Create beautiful and modern designs quickly.</p>
+                    <p>Order Now</p>
+                </a>
+                <a class="col-md-4 shd-box page-scroll" href="#contact">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fas fa-laptop-code fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Responsive Website Design</h4>
+                    <p class="text-muted">Build your business website with beautiful and smart ideas quickly.</p>
+                    <p>Order Now</p>
+                </a>
+                <a class="col-md-4 shd-box page-scroll" href="#contact">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-chart-line fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Promotion Business</h4>
+                    <p class="text-muted">Promote your business Facebook page very easily.</p>
+                    <p>Order Now</p>
+                </a>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Portfolio Grid Section -->
+    <!-- <section id="portfolio" class="bg-light-gray portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">App Store</h2>
+                    <h3 class="section-subheading text-muted">Our work has 100% pure and absolute trust.</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-12 portfolio-item">
+                    <a href="https://play.google.com/store/apps/details?id=com.KawsarKamal.Allah99NamesFojilot" class="portfolio-link" data-toggle="modal">
+
+                        <img src="https://play-lh.googleusercontent.com/DYKYaQ3A4MccBNFe-xdvr1XDB_6uttzXQZjuHnMk4jnzfHDunMJcKKrEvIJXbf3mCOY=w240-h480-rw" class="img-responsive fixImg" alt="Beautiful - Visiting Card">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Allah 99 Names Fojilot</h4>
+                        <p class="text-muted">আমাদের এই অ্যাপ্লিকেশনটি যদি আপনারা ডাউনলোড করে দেখেন তাহলে আপনার অজানা অনেক তথ্য আপনারা জানতে পারবেন আপনি জানতে পারবেন আল্লাহর ৯৯ টি নাম এবং নামের অর্থ ও ফজিলত।</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 portfolio-item">
+                    <a href="https://play.google.com/store/apps/details?id=com.kawsarkamal.colorpicker" class="portfolio-link" data-toggle="modal">
+                        <img src="https://play-lh.googleusercontent.com/lSl7K0dNu-O6PEK1k8V97K623hCQ0gvS5DupfvpBtGndytkLxQAwP_L9Vc1VpEth6Io=w240-h480-rw" class="img-responsive fixImg" alt="National Productivity Organization - Leaflet">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Color picker Hex CMYK RGB</h4>
+                        <p class="text-muted">Color Picker gives information about colors including color names, HEX color value, CMYK color value and RGB color value.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 portfolio-item">
+                    <a href="https://play.google.com/store/apps/details?id=com.KawsarKamal.ayatulkursisura" class="portfolio-link" data-toggle="modal">
+                        <img src="https://play-lh.googleusercontent.com/cy_k3c9BfluP5tJLyosh1tpoe9058253au6UrlSu_daEYNZR9XV83JrBsEhcG0DnEY0=w240-h480-rw" class="img-responsive fixImg" alt="Agency IT - Visiting Card">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>আয়াতুল কুরসী সূরা Ayatul Kursi</h4>
+                        <p class="text-muted">এই আয়াত কে আল কোরআনের প্রসিদ্ধ আয়াত বলা হয় (আয়াত নাংঃ ২৫৫) এই আয়াত টিকে দোয়া হিসাবে পাঠ করা হয়।</p>
+                    </div>
+                </div>
+                <div class="clearfix"></div> -->
+<!--                 <div class="col-md-4 col-sm-12 portfolio-item">
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="assets/NetBuilderBD.png" class="img-responsive" alt="Reichert - Poster">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Reichert - Poster</h4>
+                        <p class="text-muted">Graphic Design</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 portfolio-item">
+                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="assets/NetBuilderBD.png" class="img-responsive" alt="Capital Bangla Restaurant - Leaflet">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Capital Bangla Restaurant - Leaflet</h4>
+                        <p class="text-muted">Graphic Design</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 portfolio-item">
+                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="assets/NetBuilderBD.png" class="img-responsive" alt="Mas Bangla Travel">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Mas Bangla Travel</h4>
+                        <p class="text-muted">Website Design</p>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="col-md-4 col-sm-12 portfolio-item">
+                    <a href="#portfolioModal7" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="assets/NetBuilderBD.png" class="img-responsive" alt="Big Burger - Poster">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Big Burger - Poster</h4>
+                        <p class="text-muted">Graphic Design</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 portfolio-item">
+                    <a href="#portfolioModal8" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="assets/NetBuilderBD.png" class="img-responsive" alt="JF World Website Design">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>JF World</h4>
+                        <p class="text-muted">Website Design</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 portfolio-item">
+                    <a href="#portfolioModal9" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="assets/NetBuilderBD.png" class="img-responsive" alt="Above PSD Template Design">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Above</h4>
+                        <p class="text-muted">PSD Template Design</p>
+                    </div>
+                </div> -->
+            <!-- </div>
+        </div>
+    </section> -->
+
+
+        <!-- Contact Section -->
+    <!-- <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Contact Us</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 contact">
+                    <form action="https://formspree.io/f/mjkvkawa" method="POST">
+                        <input type="text" placeholder="Name" name="first" id="name" required><br>
+                        <input type="email" placeholder="Email" name="last" id="email" required><br>
+                        <input type="phone" placeholder="Phone" name="phone" id="phone" required><br>
+                        <input type="text" placeholder="Subject" name="subject" id="subject" required><br>
+                        <textarea row="10" cols="60" name="message" placeholder="Type Message" name="message" id="message" required></textarea><br>
+                        <button name="submit" id="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+
+    
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <a href="#page-top" class="netbuilderfacebook page-scroll">
+                        <img src="https://play-lh.googleusercontent.com/ye3apV1gnIv6VThoz_gT2sQXzskgLYOsQWrXdydaR6gfB11yr5UaSStq6j4C74luusc=s94-rw" width="70px" height="70px" alt="">
+                    </a>
+                </div>
+                <div class="col-md-12">
+                    <span class="copyright">Copyright &copy; Fahadin Developer - 2019</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <a href="#" class="scrollToTop">
+        <i class="fa fa-chevron-circle-up" aria-hidden="true"></i>
+    </a>
+    <a class="scrollSocial" href="https://www.facebook.com/netbuilderbd/" target="_blank">
+        <ul>
+          <li class="facebook">
+            <i class="fa fa-facebook linkfacebook" aria-hidden="true"></i>
+            <div class="slider">
+              <p>facebook Page</p>
+            </div>
+          </li>
+        </ul>
+    </a>
+
+ 
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" integrity="sha384-mE6eXfrb8jxl0rzJDBRanYqgBxtJ6Unn4/1F7q4xRRyIw7Vdg9jP4ycT7x1iVsgb" crossorigin="anonymous"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/agency.js"></script>
+    <script src="js/contact_me.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Petto Store BD</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="shortcut icon" href="assets/Screenshot 2024-11-21 172433.png">
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Modak&display=swap" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="css/contactstyle.css">
+    <link href="css/agency.css" rel="stylesheet">
+    <style>
+        .fixImg{
+            display: block;
+            width: 100%;
+            height: 300px;
+        }
+        .fixImgPayment{
+            display: block;
+            width: 100%;
+            height: 200px;
+        }
+
+
+
+        .hovertext {
+        position: relative;
+        width: 50%;
+        }
+
+        .image {
+        display: block;
+        width: 100%;
+        height: auto;
+        }
+
+        .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: #d70985;
+        }
+
+        .hovertext:hover .overlay {
+        opacity: 0.7;
+        }
+
+        .text {
+        color: white;
+        font-size: 30px;
+        position: absolute;
+        top: 75%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+        }
+    </style>
+
+</head>
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll bagel-fat-one-regular" href="#page-top">Petto Store BD</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropbtn">Pet Categories</a>
+                        <div class="dropdown-content">
+                            <a href="cat_food.html">Cat Food</a>
+                            <a href="cat_litter.html">Cat Litter</a>
+                            <!-- <a href="dog_item.html">Dog</a> -->
+                            <!-- <a href="#">Aminal</a>
+                            <a href="#">Bird</a> -->
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropbtn">Pet Accessories</a>
+                        <div class="dropdown-content">
+                            <a href="medicine.html">Medicine</a>
+                            <!-- <a href="dog_item.html">Supplies</a> -->
+                        </div>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="intro-text">
+                <img src="assets/Screenshot 2024-11-21 172433.png" width="140px" height="140px" alt="">
+                <div class="intro-lead-in">গ্রাহকদের খুশি করাই আমাদের মূল উদ্দেশ্য।</div>
+                <a href="#care" class="page-scroll btn btn-xl SeeMore">
+                    আরও দেখুন 
+                </a>
+                <div class="arrow-down"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <!-- <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Our Services</h2>
+                    <h3 class="section-subheading text-muted">Come, see, enjoy our service</h3>
+                </div>
+            </div>
+            <div class="row text-center all-services">
+                <a class="col-md-4 shd-box page-scroll" href="#contact">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fas fa-palette fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Graphic Design</h4>
+                    <p class="text-muted">Create beautiful and modern designs quickly.</p>
+                    <p>Order Now</p>
+                </a>
+                <a class="col-md-4 shd-box page-scroll" href="#contact">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fas fa-laptop-code fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Responsive Website Design</h4>
+                    <p class="text-muted">Build your business website with beautiful and smart ideas quickly.</p>
+                    <p>Order Now</p>
+                </a>
+                <a class="col-md-4 shd-box page-scroll" href="#contact">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-chart-line fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Promotion Business</h4>
+                    <p class="text-muted">Promote your business Facebook page very easily.</p>
+                    <p>Order Now</p>
+                </a>
+            </div>
+        </div>
+    </section> -->
+
+
+
+
+    <section id="care" class="bg-light-gray portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">PET FOOD & ACCESSORIES COLLECTIONS</h2>
+                    <h3 class="section-subheading text-muted">Petto Store BD</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-12 portfolio-item ">
+                    <a href="cat_food.html" class="portfolio-link hovertext" data-toggle="Visiting">
+                        <img src="assets/service/01.avif" class="img-responsive fixImg" alt="kette">
+                        <div class="overlay">
+                            <div class="text">Cat Food
+                                <br />
+                                <p>39 Products</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-12 portfolio-item">
+                    <a href="cat_litter.html" class="portfolio-link hovertext" data-toggle="Visiting">
+                        <img src="assets/service/02.jpeg" class="img-responsive fixImg" alt="">
+                        <div class="overlay">
+                            <div class="text">Cat Litter
+                                <br />
+                                <p>9 Products</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-12 portfolio-item">
+                    <a href="medicine.html" class="portfolio-link hovertext" data-toggle="Visiting">
+                        <img src="assets/service/03.webp" class="img-responsive fixImg" alt="">
+                        <div class="overlay">
+                            <div class="text">Medicine
+                                <br />
+                                <p>29 Products</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- care pet Section -->
+
+
+    <section id="portfolio" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Pet Care</h2>
+                    <h3 class="section-subheading text-muted">আপনার পোষা প্রাণীর যত্ন সহকারে রাখার কিছু নিয়ম</h3>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4 col-sm-12 portfolio-item">
+                    <img src="assets/care/01.jpg" class="img-responsive fixImg" alt="">
+                    <div class="portfolio-caption">
+                        <h4>বিড়ালের সম্পর্কে অজানা কিছু তথ্য</h4>
+                        <p class="text-muted">শহরবাসীদের অনেকেই পোষা প্রাণী হিসেবে বিড়াল পালেন। এটি বর্তমানে পৃথিবীর সবচেয়ে জনপ্রিয় গৃহপালিত প্রাণী। বিড়াল খুবই আরামপ্রিয় একটি প্রাণী। বাংলাদেশে একে ‘বাঘের মাসি‘ বলে ডাকা হয়। অনেকে বিড়াল পোষেন ইঁদুর মারার জন্য। তাছাড়া দুধ, মাছ, মাংস বিড়ালের প্রিয় খাবার। এরা খুবই নিঃশব্দে চলাফেরা করতে পারে। কারণ এদের পায়ের নীচে খুব নরম মাংসপিণ্ড থাকে।</p>
+                        <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">CONTINUE READING...</a>
+                    </div>
+                    
+                </div>
+                <div class="col-md-4 col-sm-12 portfolio-item">
+                    <img src="assets/care/02.jpg" class="img-responsive fixImg" alt="">
+                    <div class="portfolio-caption">
+                        <h4>বিড়ালের ডায়রিয়া হলে প্রাথমিকভাবে যা করনীয়</h4>
+                        <p class="text-muted">বিড়ালের ডায়রিয়া হলে যত দ্রুত সম্ভব প্রয়োজনীয় ব্যবস্থা নিতে হবে। এ অবস্থায় বিড়াল খাওয়া বন্ধ করে দেয় এবং দ্রুত পানিশূন্য হয়ে যায়। তাই প্রথমেই বুঝতে হবে কি কারনে পেট খারাপ হচ্ছে।</p>
+                        <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">CONTINUE READING...</a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 portfolio-item">
+                    <img src="assets/care/03.jpg" class="img-responsive fixImg" alt="">
+                    <div class="portfolio-caption">
+                        <h4>কুকুর অথবা বিড়াল কামড় দিলে যা করণীয় এবং এর চিকিৎসা সম্পর্কিত তথ্য</h4>
+                        <p class="text-muted">বিড়াল অথবা কুকুর অনেক কারনেই মানুষকে আক্রমন করতে পারে, তাই বলে কুকুর পাগল হয়ে গিয়েছে অথবা র‍্যবিসে আক্রান্ত এমন না। অযথা প্রানিদের জ্বালাতন করা, মারা, মা কুকুরের বাচ্চাদের বিরক্ত করা উচিৎ নয়। দুর্ঘটনাবশত কামড় অথবা আঁচর লেগে গেলে কিছু প্রাথমিক চিকিৎসা নিয়ে নেওয়া উচিৎ।</p>
+                        <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">CONTINUE READING...</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- payment Section -->
+    <section id="team" class=" team-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Our Payment Way</h2>
+                    <h3 class="section-subheading text-muted">আপনার প্রয়োজনীয় প্রোডাক্টটি নিতে আমাদের পেমেন্ট গ্রেট হয়ে</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-4">
+                    <div class="team-member">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/6/68/BKash_logo.svg/150px-BKash_logo.svg.png" class="img-responsive fixImgPayment" alt="">
+                        <h4>01976446846</h4>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <div class="team-member">
+                        <img src="https://www.dutchbanglabank.com/img/mlogo.png" class="img-responsive fixImgPayment" alt="">
+                        <h4>01794799599</h4>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <div class="team-member">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/88/Nagad_Logo_2024.svg/800px-Nagad_Logo_2024.svg.png" class="img-responsive fixImgPayment" alt="">
+                        <h4>01976446846</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Information Section -->
+    <section id="information" class="information">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-7">
+                    <h4>Petto Store BD</h4>
+                    <p>যেখানে পোষা প্রাণী পরিবার! আপনার প্রিয় সঙ্গীদের জন্য আমাদের কিউরেটেড সরবরাহগুলি অন্বেষণ করুন, গুণমান এবং যত্ন সহ পোষা প্রাণীর যত্নকে পুনরায় সংজ্ঞায়িত করুন। পণ্যের বাইরে, আমরা আপনার পোষা পিতৃত্বের অংশীদার, ব্যতিক্রমী পরিষেবার জন্য প্রতিশ্রুতিবদ্ধ। Petto Store BD-এর সাথে প্রতিটি দিনকে বিশেষ করে তুলে অসাধারণ মুহূর্তগুলির জন্য আমাদের সাথে যোগ দিন। আমাদের লক্ষ্য হল আপনার লোমশ বন্ধুদের মঙ্গল বাড়ানো, নিশ্চিত করা যে আপনার পোষা প্রাণীর অভিভাবকত্বের যাত্রা আনন্দদায়ক এবং চাপমুক্ত। উচ্চ-মানের পণ্য এবং ব্যক্তিগতকৃত সহায়তার একটি অনন্য মিশ্রণের জন্য পেটো স্টোর বিডি বেছে নিন। আপনার পোষা প্রাণী সেরা প্রাপ্য, এবং আমরা এটি ঘটতে এখানে আছি. Petto Store BD পরিবারে স্বাগতম, যেখানে আপনার পোষা প্রাণীদের সাথে প্রতিটি মুহূর্ত অসাধারণ!</p>
+                </div>
+                <div class="col-sm-12 col-md-2">
+                </div>
+                <div class="col-sm-12 col-md-3">
+                    <h4>Contact info</h4>
+                    <p>Address : 411/11, west shanarpar, post saruliya,1361 Dhaka south, Dhaka.</p>
+                    <p>+8801976446846</p>
+                    <p>Email: chowdrugvet@gmail.com</p>
+                </div>
+                <div class="col-lg-12 contact">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <a href="#page-top" class="netbuilderfacebook page-scroll">
+                        <img src="assets/Screenshot 2024-11-21 172433.png" width="70px" height="70px" alt="">
+                    </a>
+                </div>
+                <div class="col-md-12">
+                    <span class="copyright">Copyright &copy; Petto Store BD</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <a href="#" class="scrollToTop">
+        <i class="fa fa-chevron-circle-up" aria-hidden="true"></i>
+    </a>
+    <!-- <a class="scrollSocial" href="" target="_blank">
+        <ul>
+          <li class="facebook">
+            <i class="fa fa-facebook linkfacebook" aria-hidden="true"></i>
+            <div class="slider">
+              <p>facebook Page</p>
+            </div>
+          </li>
+        </ul>
+        <ul>
+            <li class="instagram">
+                <i class="fa fa-instagram linkinstagram" aria-hidden="true"></i>
+                <div class="slider">
+                    <p>Instagram</p>
+                </div>
+            </li>
+        </ul>
+    </a> -->
+
+
+
+
+    <!-- Portfolio Modal 1 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h3>বিড়ালের সম্পর্কে অজানা কিছু তথ্য</h3>
+                                <p class="item-intro text-muted">শহরবাসীদের অনেকেই পোষা প্রাণী হিসেবে বিড়াল পালেন। এটি বর্তমানে পৃথিবীর সবচেয়ে জনপ্রিয় গৃহপালিত প্রাণী। বিড়াল খুবই আরামপ্রিয় একটি প্রাণী। বাংলাদেশে একে ‘বাঘের মাসি‘ বলে ডাকা হয়। অনেকে বিড়াল পোষেন ইঁদুর মারার জন্য। তাছাড়া দুধ, মাছ, মাংস বিড়ালের প্রিয় খাবার। এরা খুবই নিঃশব্দে চলাফেরা করতে পারে। কারণ এদের পায়ের নীচে খুব নরম মাংসপিণ্ড থাকে।</p>
+                                <p class="item-intro text-muted">প্রায় ৯,০০০ বছর পূর্বে প্রাচ্যের কৃষকেরা সর্বপ্রথম বন্য বিড়ালকে পোষ মানাতে সক্ষম হন। তারই কয়েক শত বছর পর মিশর ছাড়িয়ে সমুদ্রের পার্শ্ববর্তী এলাকাগুলোতে বিড়াল ছড়িয়ে পড়ে। বর্তমানে শুধুমাত্র অ্যান্টার্কটিকা মহাদেশ ব্যতীত সর্বত্রই বিড়াল দেখা যায়। চীনে প্রায় ৫,৩০০ বছর পূর্বের কিছু মৃৎশিল্পে চমৎকারভাবে বিড়ালের ছবি ফুটিয়ে তোলা হয়, যেগুলো আকারে বর্তমানের সাধারণ বিড়ালের মতই। যদিও খ্রিস্টপূর্ব ২৪৬৫-২১৫০ অব্দে বিড়ালকে একটি পবিত্র প্রাণী হিসেবে মানা হতো, তবুও ঐ সময়ে তেমন কেউ বিড়াল পালতো না। বিভিন্ন মন্দিরে বিড়ালের পূজা করা হতো। ইঁদুর ধরে বলে বিড়ালকে অতিপ্রাকৃতিক ক্ষমতার অধিকারী পশু বলে বিবেচনা করা হতো।</p>
+                                <img class="img-responsive img-centered" src="assets/care/01.jpg" alt="">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Home Page</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 2 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <h2>বিড়ালের ডায়রিয়া হলে প্রাথমিকভাবে যা করনীয়</h2>
+                                <p class="item-intro text-muted">বিড়ালের ডায়রিয়া হলে যত দ্রুত সম্ভব প্রয়োজনীয় ব্যবস্থা নিতে হবে। এ অবস্থায় বিড়াল খাওয়া বন্ধ করে দেয় এবং দ্রুত পানিশূন্য হয়ে যায়। তাই প্রথমেই বুঝতে হবে কি কারনে পেট খারাপ হচ্ছে। নিচে পেট খারাপের কিছু কারন দেওয়া হলঃ</p>
+                                <p class="item-intro text-muted">
+                                    ১। গরুর দুধ ঘন করে খেলে।<br />
+                                    ২। নতুন করে Cat Food খাওয়া অথবা Cat Food এর Brand পরিবর্তন করলে।<br />
+                                    ৩। মাত্রা অতিরিক্ত খাবার খেলে।<br />
+                                    ৪। হটাৎ করে (অভ্যাস না থাকলে) কাঁচা মাছ অথবা মাংস খেলে। অতিরিক্ত ঘাস বা লতা জাতীয় পাতা খেলে।<br />
+                                    ৫। পোকা মারার স্প্রে, শ্যাম্পু, পাউডার অথবা ওষুধ জাতীয় কিছু মুখে গেলে।<br />
+                                    ৬। কৃমির কারনে।<br />
+                                    ৭। জ্বর অথবা অন্য কোন অসুখ এর কারনে।<br />
+                                    করণীয়:<br />
+                                    ## প্রথমেই প্রাথমিক চিকিৎসা হিসেবে স্যলাইন খাওয়াতে হবে। মানুষের ওরস্যলাইনকে পরিমানমত অল্প পানিতে গুলিয়ে অথবা রাইস স্যলাইন রান্না করে ১/২ ঘণ্টা পর পর ২ সিরিঞ্জ করে খাওয়াতে হবে। খেতে না চাইলে ওয়েট ফুড অথবা মাছ মিশিয়ে ফ্লেভার বানিয়ে খাওয়াতে হবে অথবা সিরিঞ্জ এবং ড্রপার দিয়ে জোর করে খাওয়াতে হবে। Petme Probiotic খাবারের সাথে মিশিয়ে দিলে খুব ভাল কাজ করবে। এটি খুব দ্রুত পানিশূন্যতা দূর করে এবং পায়খানা বন্ধ করে এবং কোন সাইড ইফেক্ট নেই। এভাবে ১/২ দিনের মধ্যেই পাতলা পায়খানা হলে তা কমে যাবে। কিন্তু ৪৮ ঘণ্টার মধ্যে যদি না কমে তাহলে অবশ্যই কোন ভেট এর সাথে যোগাযোগ করে ডায়রিয়া কমানোর জন্য ওষুধ খাওয়াতে হবে।<br />
+                                    ## এসময় সেদ্ধ মুরগীর মাংস এবং মাংস সেদ্ধ পানি, মিষ্টিকুমড়া সেদ্ধ এসব খাবার দেওয়া উচিৎ। মনে রাখতে হবে ভাত, মা্ছ,‌ মাংস যাই দেয়া হোক না কেন, ব্লেনড করে নরম করে দিতে হবে।<br />
+                                    ## যদি গরুর দুধের কারনে হয় তাহলে অবশ্যই সেটা দেওয়া বন্ধ করতে হবে। সম্ভব না হলে সমান পরিমান পানি মিশিয়ে তারপর খাওয়াতে হবে।<br />
+                                    ## প্রথমবার Dry Food খাওয়ালে পেট খারাপ হতে পারে, এতে ভয় পাওয়ার কিছু নেই। ২-১দিনের মধ্যে এটি ঠিক হয়ে যায়। তখন খুব অল্প পরিমানে দিতে হবে অথবা পেট ভাল হওয়া পর্যন্ত Dry Food দেয়া বন্ধ রাখতে হবে। আবার Brand পরিবর্তন করলে হতে পারে। তখন পুরনো খাবারের সাথে মিশিয়ে আস্তে আস্তে অভ্যাস করতে হবে।<br />
+                                    ## যারা সব সময় সেদ্ধ এবং রান্না করা খাবার খায় সে সব বিড়াল কাঁচা খাবার খেলে বমি এবং পাতলা পায়খানা করে। সুতরাং এমন হলে সাথে সাথে কাঁচা খাবার দেয়া বন্ধ করতে হবে।<br />
+                                    ## অনেক সময় কৃমি হলে পাতলা পায়খানা আর বমি হয়। পায়খানার মধ্যে কৃমি দেখা যায়। তখন খুব দ্রুত ভেটের পরামর্শ অনুযায়ী কৃমির ওষুধ খাওয়াতে হবে। জ্বর অথবা অন্য কোন শারীরিক সমস্যার জন্য হলে অবশ্যই ভেটের পরামর্শ অনুযায়ী ওষুধ খাওয়াতে হবে।<br />
+                                    উপরোক্ত কারন ছাড়াও বিভিন্ন কারনে বিড়ালের ডায়রিয়া হতে পারে। বদহজমের কারনে অথবা বিভিন্ন কারনে potty নরম হতে পারে। দুর্গন্ধযুক্ত সাথে মিউকাস অথবা হালকা রক্ত যেতে পারে। বার বার পাতলা পায়খানা হলে পানিশূন্যতা দেখা দিতে পারে তাই দ্রুত প্রয়োজনীয় ব্যবস্থা নেওয়া জরুরী।
+                                </p>
+                                <img class="img-responsive img-centered" src="img/portfolio/startup-framework-preview.jpg" alt="">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Home Page</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 3 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>কুকুর অথবা বিড়াল কামড় দিলে যা করণীয় এবং এর চিকিৎসা সম্পর্কিত তথ্য</h2>
+                                <p class="item-intro text-muted">
+                                    বিড়াল অথবা কুকুর অনেক কারনেই মানুষকে আক্রমন করতে পারে, তাই বলে কুকুর পাগল হয়ে গিয়েছে অথবা র‍্যবিসে আক্রান্ত এমন না। অযথা প্রানিদের জ্বালাতন করা, মারা, মা কুকুরের বাচ্চাদের বিরক্ত করা উচিৎ নয়। দুর্ঘটনাবশত কামড় অথবা আঁচর লেগে গেলে কিছু প্রাথমিক চিকিৎসা নিয়ে নেওয়া উচিৎ।<br />
+                                    <br />
+                                    * প্রথমে কামড়ের স্থানটি একটি পরিস্কার কাপড় অথবা তোয়ালে দিয়ে চেপে ধরে রক্ত পড়া বন্ধ করতে হবে।<br />
+                                    * তারপর ভালভাবে সাবান (Detergent/ Povidone Iodine)দিয়ে জায়গাটি ধুতে হবে। অন্তত ১৫ মিনিট পানি ঢালতে হবে এতে করে র‍্যবিস এর জীবাণু থাকলে সেটা কমে যাবে।<br />
+                                    * পালিত এবং ভ্যক্সিন করা কুকুর বিড়াল কামড় অথবা আঁচর দিলে ভ্যক্সিনের প্রয়োজন হয় না। কিন্তু যেসব কুকুর বিড়াল কাঁচা মাছ মাংস খায় অথবা শিকার ধরে, তাদের দাঁতে, লালায় এবং নখে জীবাণু থাকে এবং আপনার ডায়াবেটিস এবং রোগ প্রতিরোধ ক্ষমতা কম থাকলে ঐ জায়গাটি ইনফেকশন হয়ে যাবে। তাই সাবান দিয়ে ধুয়ে অ্যান্টিবায়টিক মলম লাগাতে হবে। যে কোন ফার্মেসি থেকে টিটেনাস ভ্যক্সিন নিয়ে নিতে পারেন প্রয়োজন হলে।<br />
+                                    * সাধারনত কুকুরের মধ্যেই র‍্যবিস দেখা যায়, খুব কম সংখ্যক বিড়াল র‍্যবিসে আক্রান্ত হয়। আক্রান্ত প্রাণীর লালার মাধ্যমেই মুলত র‍্যবিস ছড়ায়। যদি প্রাণীটি র‍্যাবিস আক্রান্ত হয় তাহলে তার মুখ দিয়ে লালা পরবে, সবাইকে কামড়াতে চাইবে, পানি খেতে চাইবে কিন্তু খেতে পারবে না এবং লক্ষনগুলো প্রকাশ হওয়ার ৩-৭ দিনের মধ্যে মারা যাবে। সুতরাং রাস্তার কুকুর, বিড়াল, বেজী অথবা বাদুর কামড় দিলে দেরি না করে ৪৮ ঘণ্টার মধ্যে অ্যান্টি-র‍্যবিস ভ্যাক্সিন নিয়ে নেওয়া উচিৎ।<br />
+                                    <br />
+                                    ভাক্সিন কোথায় দিবেনঃ<br />
+                                    # মানুষের ভ্যক্সিনঃ কুকুরবিড়াল কামড় দিলে যাবেন “মহাখালি সংক্রামক ব্যাধি হাসপাতাল, ঢাকা”(মহাখালি রেইলগেইট এর কাছে ৭ তলা ভবন), এখানে সরকারিভাবে মাত্র ১০ টাকা টিকেট কেটে Anti Rabies Vaccine দিতে পারবেন, এর ৪টা ডোজ দিতে হয়। এর মেয়াদ থাকে ৫ বছর পর্যন্ত। আরেকটি ইনজেকশন দিবে যেটি কামড়ের স্থানে দেয়া হয়, এটা ফার্মেসি থেকে কিনতে হয় দাম ১৫০০-২০০০ টাকা। প্রয়োজনে ডাক্তার সাথে অন্যান্য ওষুধ দিয়ে দিবে।<br />
+                                    <br />
+                                    # কুকুর বিড়ালের ভ্যাক্সিনঃ Rabies এ আক্রান্ত পশুর কামড়ে আরেকটি পশু অথবা মানুষ আক্রান্ত হতে পারে, সুতরাং র‍্যাবিসে আক্রান্ত হওয়ার আগেই আপনার পোষা প্রানিকে Rabies Vaccine দিন। এর মূল্য ৩০০-৫০০টাকা। যেকোনো ভেটেরেনারি ডাক্তারের কাছে এই ভ্যক্সিন পাওয়া যায়।<br />
+                                    <br />
+                                    কুকুর বিড়াল মানুষের সঙ্গ অনেক পছন্দ করে এবং সহজেই পোষ মানে। এরা সহজে মানুষের ক্ষতি করে না,কিন্তু নিজেকে বাঁচানোর জন্য ও অনেক সময় কামড় এবং আঁচর দিয়ে বসে। তাই এদের মেরে ফেলাই সমাধান নয়, পোষা প্রানির সাথে সাথে রাস্তার কুকুর বিড়ালকেও ভ্যক্সিন করান, নিরাপদ থাকুন।
+                                </p>
+                                <img class="img-responsive img-centered" src="img/portfolio/treehouse-preview.jpg" alt="">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Home Page</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+ 
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" integrity="sha384-mE6eXfrb8jxl0rzJDBRanYqgBxtJ6Unn4/1F7q4xRRyIw7Vdg9jP4ycT7x1iVsgb" crossorigin="anonymous"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/agency.js"></script>
+    <script src="js/contact_me.js"></script>
+</body>
+
+</html>
