@@ -4,7 +4,7 @@ const products = [
     { imageURL: "assets/medicine/02.jpeg", name: "Cat star", category: "medicine", price: 480 },
     { imageURL: "assets/medicine/03.jpeg", name: "Pet up drop", category: "medicine", price: 450 },
     { imageURL: "assets/medicine/04.jpeg", name: "Easy breath cat", category: "medicine", price: 450 },
-    { imageURL: "assets/medicine/05.jpeg", name: "breath Easy dog", category: "medicine", price: 650 },
+    { imageURL: "assets/medicine/05.jpg", name: "breath Easy dog", category: "medicine", price: 650 },
     { imageURL: "assets/medicine/06.jpeg", name: "Feli-D", category: "medicine", price: 320 },
     { imageURL: "assets/medicine/07.jpeg", name: "Kiwof", category: "medicine", price: 100 },
     { imageURL: "assets/medicine/08.jpeg", name: "Helmenticide-L", category: "medicine", price: 80 },
