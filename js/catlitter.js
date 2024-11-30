@@ -5,7 +5,7 @@ const products = [
     { imageURL: "assets/litter/03.jpg", name: "Pani Litter 10ltr", category: "Litter", price: 520 },
     { imageURL: "assets/litter/04.jpg", name: "Pani Litter 30ltr", category: "Litter", price: 1450 },
     { imageURL: "assets/litter/05.jpg", name: "Best pet Litter 10ltr", category: "Litter", price: 520 },
-    { imageURL: "assets/litter/05.jpg", name: "Best pet Litter 30ltr", category: "Litter", price: 1450 },
+    { imageURL: "assets/litter/06.jpg", name: "Best pet Litter 30ltr", category: "Litter", price: 1450 },
     { imageURL: "assets/litter/07.jpg", name: "Kitty choice Litter 25ltr", category: "Litter", price: 1350 },
     { imageURL: "assets/litter/08.png", name: "Cozie cat Litter 5ltr", category: "Litter", price: 350 },
     { imageURL: "assets/litter/09.jpg", name: "Cozie cat Litter 10ltr", category: "Litter", price: 680 },
