@@ -49,7 +49,7 @@ h4 {
 
 .medicineFilters > select {
     padding: 15px;
-    width: 200px;
+    width: auto;
 }
 .medicineFilters > input {
     padding: 15px;
@@ -58,8 +58,8 @@ h4 {
 
 .filters > button {
     font-size: 17px;
-    padding: 3px;
-    width: 10em;
+    padding: 2px;
+    width: auto;
     border: none;
     border-radius: 5px;
     background-color: #fff;
@@ -68,7 +68,7 @@ h4 {
 
 .filters > input, select {
     padding: 5px;
-    width: 120px;
+    width: 100px;
     border-radius: 5px;
     background-color: #fff;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -101,7 +101,7 @@ h4 {
     max-height: 230px;
     margin-bottom: 10px;
 }
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
     .filters > button {
         font-size: 10px;
         padding: 1px;
@@ -115,3 +115,11 @@ h4 {
         gap: 3px;
     }
   }
+  /* @media screen and (max-width: 765px) {
+    .overlay {
+      text-align: center;
+    }
+    .itemslist a:hover {
+      text-decoration: none;
+    }
+  } */
