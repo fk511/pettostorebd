@@ -29,6 +29,8 @@ body {
 }
 .containerLine > h1 {
     margin-bottom: 30px;
+    text-align: center;
+
 }
 
 .container > h1 {
@@ -36,6 +38,7 @@ body {
     color: #2d2d2d;
     text-shadow: #cccc 1px 1px;
     margin-bottom: 20px;
+    text-align: center;
 }
 h4 {
     font-size: small;
@@ -58,8 +61,8 @@ h4 {
 
 .filters > button {
     font-size: 17px;
-    padding: 2px;
-    width: auto;
+    padding: 3px;
+    width: 10em;
     border: none;
     border-radius: 5px;
     background-color: #fff;
@@ -68,7 +71,7 @@ h4 {
 
 .filters > input, select {
     padding: 5px;
-    width: 100px;
+    width: 120px;
     border-radius: 5px;
     background-color: #fff;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -105,7 +108,7 @@ h4 {
     .filters > button {
         font-size: 10px;
         padding: 1px;
-        width: 4em;
+        width: 6em;
         
     }
     .product {
