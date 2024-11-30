@@ -390,8 +390,6 @@ section h3.section-subheading {
 
 
 @media (min-width: 768px) {
-
-
 .hovertext {
   position: relative;
   width: 50%;
@@ -438,10 +436,22 @@ section h3.section-subheading {
   .overlay {
     text-align: center;
   }
+  .text {
+    font-size: 25px;
+    background-color: #fff !important;
+    margin-bottom: 20px;
+  }
+  .hovertext {
+    background-color: #fff !important;
+    width: 100%;
+    height: auto;
+  }
   .itemslist a:hover {
     text-decoration: none;
   }
 }
+
+
 
 
 
