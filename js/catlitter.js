@@ -1,15 +1,15 @@
 const products = [
     // cat Items
-    { imageURL: "assets/litter/01.jpeg", name: "Alpha Litter 5ltr", category: "Litter", price: 280 },
-    { imageURL: "assets/litter/02.webp", name: "Alpha Litter 10ltr", category: "Litter", price: 550 },
+    { imageURL: "assets/litter/01.jpg", name: "Alpha Litter 5ltr", category: "Litter", price: 280 },
+    { imageURL: "assets/litter/02.jpg", name: "Alpha Litter 10ltr", category: "Litter", price: 550 },
     { imageURL: "assets/litter/03.jpg", name: "Pani Litter 10ltr", category: "Litter", price: 520 },
-    { imageURL: "assets/litter/04.jpeg", name: "Pani Litter 30ltr", category: "Litter", price: 1450 },
-    { imageURL: "assets/litter/05.WebP", name: "Best pet Litter 10ltr", category: "Litter", price: 520 },
-    { imageURL: "assets/litter/05.WebP", name: "Best pet Litter 30ltr", category: "Litter", price: 1450 },
-    { imageURL: "assets/litter/07.WebP", name: "Kitty choice Litter 25ltr", category: "Litter", price: 1350 },
+    { imageURL: "assets/litter/04.jpg", name: "Pani Litter 30ltr", category: "Litter", price: 1450 },
+    { imageURL: "assets/litter/05.jpg", name: "Best pet Litter 10ltr", category: "Litter", price: 520 },
+    { imageURL: "assets/litter/05.jpg", name: "Best pet Litter 30ltr", category: "Litter", price: 1450 },
+    { imageURL: "assets/litter/07.jpg", name: "Kitty choice Litter 25ltr", category: "Litter", price: 1350 },
     { imageURL: "assets/litter/08.png", name: "Cozie cat Litter 5ltr", category: "Litter", price: 350 },
     { imageURL: "assets/litter/09.jpg", name: "Cozie cat Litter 10ltr", category: "Litter", price: 680 },
-    // { imageURL: "assets/litter/10.jpeg", name: "Number 1 cat litter 8.6ltr", category: "Litter", price: 950 },
+    { imageURL: "assets/litter/10.avif", name: "Number 1 cat litter 8.6ltr", category: "Litter", price: 950 },
 ];
 
 const productsContainer = document.querySelector('.products');
