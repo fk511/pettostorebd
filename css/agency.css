@@ -104,16 +104,14 @@ fieldset[disabled] .btn-xl.active {
   background-color: #00bfff;
 }
 
+@media (min-width: 768px) {
+
 
 .dropbtn {
-  /* background-color: #04AA6D; */
   color: white;
   font-size: 16px;
   border: none;
   }
-
-
-
 
   .dropdown {
   position: relative;
@@ -140,8 +138,17 @@ fieldset[disabled] .btn-xl.active {
   .dropdown-content a:hover {background-color: #ddd;}
 
   .dropdown:hover .dropdown-content {display: block;}
+}
 
-
+  @media screen and (max-width: 765px) {
+    .dropdown-content a {
+      background-color: #b2a6a6;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+  }
+  }
 
 .navbar-custom {
   background-color: #09141a;
