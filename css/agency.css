@@ -518,9 +518,13 @@ section h3.section-subheading {
   }
 }
 @media screen and (max-width: 765px) {
-  font-size: 30px;
-  margin-top: 0;
-  margin-bottom: 15px;
+  h2.section-heading {
+    font-size: 25px !important;
+    margin-top: 0;
+    margin-bottom: 15px;
+
+  }
+  
 }
 
 
