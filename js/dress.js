@@ -17,6 +17,10 @@ const products = [
     { imageURL: "assets/dress/15.jpg", name: "D115", category: "dress", price: 450 },
     { imageURL: "assets/dress/16.jpg", name: "D116", category: "dress", price: 250 },
     { imageURL: "assets/dress/17.jpg", name: "D117", category: "dress", price: 450 },
+    { imageURL: "assets/dress/18.jpg", name: "D118", category: "dress", price: 350 },
+    { imageURL: "assets/dress/19.jpg", name: "D119", category: "dress", price: 420 },
+    { imageURL: "assets/dress/20.jpg", name: "D120", category: "dress", price: 300 },
+    { imageURL: "assets/dress/21.jpg", name: "D121", category: "dress", price: 350 },
     
 ];
 
