@@ -16,7 +16,7 @@
 
     <!-- Custom Fonts -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="shortcut icon" href="assets/Screenshot 2024-11-21 172433.png">
+    <link rel="shortcut icon" href="assets/logo.png">
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
@@ -31,10 +31,13 @@
     <link href="css/agency.css" rel="stylesheet">
     <link rel="stylesheet" href="css/productstyle.css">
     <style>
-        /* .fixImg{
+        .fixImg{
             display: block;
             width: 100%;
-        } */
+        }
+
+
+
     </style>
 
 </head>
@@ -60,16 +63,14 @@
                         <div class="dropdown-content">
                             <a href="cat_food.html">Cat Food</a>
                             <a href="cat_litter.html">Cat Litter</a>
-                            <!-- <a href="dog_item.html">Dog</a> -->
-                            <!-- <a href="#">Aminal</a>
-                            <a href="#">Bird</a> -->
                         </div>
                     </li>
                     <li class="dropdown">
                         <a class="dropbtn">Pet Accessories</a>
                         <div class="dropdown-content">
                             <a href="medicine.html">Medicine</a>
-                            <!-- <a href="dog_item.html">Supplies</a> -->
+                            <a href="dress.html">Dress</a>
+                            <a href="supply.html">Toy & Equipment</a>
                         </div>
                     </li>
                     <li>
@@ -100,14 +101,11 @@
 
     <div class="main">
         <div class="containerLine">
-            <h1 class="headlineitem">Dog Product</h1>
+            <h1>Best Litter For Your Pet</h1>
 
-            <div class="filters">
-                <button data-category="all">All</button>
-                <button data-category="cat-food">Dog Food</button>
-                <button data-category="cat-wet-wood">Dog Wet Food</button>
-                <button data-category="treat">Dog Treats</button>
-                <button data-category="litter">Cat Litter</button>
+            <div class="filters medicineFilters">
+                <!-- <button data-category="all">All</button>
+                <button data-category="medicine">Medicine</button> -->
                 <select id="sortOrder">
                     <option value="">Sort by</option>
                     <option value="lowest">Lowest Price</option>
@@ -123,204 +121,32 @@
     </div>
 
     <!-- Script JS -->
-    <script src="js/dog.js"></script>
+    <script src="js/catlitter.js"></script>
 
-
-
-
-
-    <!-- Services Section -->
-    <!-- <section id="services">
+    <!-- Information Section -->
+    <section id="information" class="information">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Our Services</h2>
-                    <h3 class="section-subheading text-muted">Come, see, enjoy our service</h3>
+                <div class="col-sm-12 col-md-7">
+                    <h4>Petto Store BD</h4>
+                    <p>যেখানে পোষা প্রাণী পরিবার! আপনার প্রিয় সঙ্গীদের জন্য আমাদের কিউরেটেড সরবরাহগুলি অন্বেষণ করুন, গুণমান এবং যত্ন সহ পোষা প্রাণীর যত্নকে পুনরায় সংজ্ঞায়িত করুন। পণ্যের বাইরে, আমরা আপনার পোষা পিতৃত্বের অংশীদার, ব্যতিক্রমী পরিষেবার জন্য প্রতিশ্রুতিবদ্ধ। Petto Store BD-এর সাথে প্রতিটি দিনকে বিশেষ করে তুলে অসাধারণ মুহূর্তগুলির জন্য আমাদের সাথে যোগ দিন। আমাদের লক্ষ্য হল আপনার লোমশ বন্ধুদের মঙ্গল বাড়ানো, নিশ্চিত করা যে আপনার পোষা প্রাণীর অভিভাবকত্বের যাত্রা আনন্দদায়ক এবং চাপমুক্ত। উচ্চ-মানের পণ্য এবং ব্যক্তিগতকৃত সহায়তার একটি অনন্য মিশ্রণের জন্য পেটো স্টোর বিডি বেছে নিন। আপনার পোষা প্রাণী সেরা প্রাপ্য, এবং আমরা এটি ঘটতে এখানে আছি. Petto Store BD পরিবারে স্বাগতম, যেখানে আপনার পোষা প্রাণীদের সাথে প্রতিটি মুহূর্ত অসাধারণ!</p>
                 </div>
-            </div>
-            <div class="row text-center all-services">
-                <a class="col-md-4 shd-box page-scroll" href="#contact">
-                    <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fas fa-palette fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="service-heading">Graphic Design</h4>
-                    <p class="text-muted">Create beautiful and modern designs quickly.</p>
-                    <p>Order Now</p>
-                </a>
-                <a class="col-md-4 shd-box page-scroll" href="#contact">
-                    <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fas fa-laptop-code fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="service-heading">Responsive Website Design</h4>
-                    <p class="text-muted">Build your business website with beautiful and smart ideas quickly.</p>
-                    <p>Order Now</p>
-                </a>
-                <a class="col-md-4 shd-box page-scroll" href="#contact">
-                    <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-chart-line fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="service-heading">Promotion Business</h4>
-                    <p class="text-muted">Promote your business Facebook page very easily.</p>
-                    <p>Order Now</p>
-                </a>
-            </div>
-        </div>
-    </section> -->
-
-    <!-- Portfolio Grid Section -->
-    <!-- <section id="portfolio" class="bg-light-gray portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">App Store</h2>
-                    <h3 class="section-subheading text-muted">Our work has 100% pure and absolute trust.</h3>
+                <div class="col-sm-12 col-md-2">
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4 col-sm-12 portfolio-item">
-                    <a href="https://play.google.com/store/apps/details?id=com.KawsarKamal.Allah99NamesFojilot" class="portfolio-link" data-toggle="modal">
-
-                        <img src="https://play-lh.googleusercontent.com/DYKYaQ3A4MccBNFe-xdvr1XDB_6uttzXQZjuHnMk4jnzfHDunMJcKKrEvIJXbf3mCOY=w240-h480-rw" class="img-responsive fixImg" alt="Beautiful - Visiting Card">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Allah 99 Names Fojilot</h4>
-                        <p class="text-muted">আমাদের এই অ্যাপ্লিকেশনটি যদি আপনারা ডাউনলোড করে দেখেন তাহলে আপনার অজানা অনেক তথ্য আপনারা জানতে পারবেন আপনি জানতে পারবেন আল্লাহর ৯৯ টি নাম এবং নামের অর্থ ও ফজিলত।</p>
-                    </div>
+                <div class="col-sm-12 col-md-3">
+                    <h4>Contact info</h4>
+                    <p>Address : 112, hazi gafur square market, staff quarter, demra, dhaka.</p>
+                    <p>+8801976446846</p>
+                    <p>Email: chowdrugvet@gmail.com</p>
                 </div>
-                <div class="col-md-4 col-sm-12 portfolio-item">
-                    <a href="https://play.google.com/store/apps/details?id=com.kawsarkamal.colorpicker" class="portfolio-link" data-toggle="modal">
-                        <img src="https://play-lh.googleusercontent.com/lSl7K0dNu-O6PEK1k8V97K623hCQ0gvS5DupfvpBtGndytkLxQAwP_L9Vc1VpEth6Io=w240-h480-rw" class="img-responsive fixImg" alt="National Productivity Organization - Leaflet">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Color picker Hex CMYK RGB</h4>
-                        <p class="text-muted">Color Picker gives information about colors including color names, HEX color value, CMYK color value and RGB color value.</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-12 portfolio-item">
-                    <a href="https://play.google.com/store/apps/details?id=com.KawsarKamal.ayatulkursisura" class="portfolio-link" data-toggle="modal">
-                        <img src="https://play-lh.googleusercontent.com/cy_k3c9BfluP5tJLyosh1tpoe9058253au6UrlSu_daEYNZR9XV83JrBsEhcG0DnEY0=w240-h480-rw" class="img-responsive fixImg" alt="Agency IT - Visiting Card">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>আয়াতুল কুরসী সূরা Ayatul Kursi</h4>
-                        <p class="text-muted">এই আয়াত কে আল কোরআনের প্রসিদ্ধ আয়াত বলা হয় (আয়াত নাংঃ ২৫৫) এই আয়াত টিকে দোয়া হিসাবে পাঠ করা হয়।</p>
-                    </div>
-                </div>
-                <div class="clearfix"></div> -->
-<!--                 <div class="col-md-4 col-sm-12 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="assets/NetBuilderBD.png" class="img-responsive" alt="Reichert - Poster">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Reichert - Poster</h4>
-                        <p class="text-muted">Graphic Design</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-12 portfolio-item">
-                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="assets/NetBuilderBD.png" class="img-responsive" alt="Capital Bangla Restaurant - Leaflet">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Capital Bangla Restaurant - Leaflet</h4>
-                        <p class="text-muted">Graphic Design</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-12 portfolio-item">
-                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="assets/NetBuilderBD.png" class="img-responsive" alt="Mas Bangla Travel">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Mas Bangla Travel</h4>
-                        <p class="text-muted">Website Design</p>
-                    </div>
-                </div>
-                <div class="clearfix"></div>
-                <div class="col-md-4 col-sm-12 portfolio-item">
-                    <a href="#portfolioModal7" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="assets/NetBuilderBD.png" class="img-responsive" alt="Big Burger - Poster">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Big Burger - Poster</h4>
-                        <p class="text-muted">Graphic Design</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-12 portfolio-item">
-                    <a href="#portfolioModal8" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="assets/NetBuilderBD.png" class="img-responsive" alt="JF World Website Design">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>JF World</h4>
-                        <p class="text-muted">Website Design</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-12 portfolio-item">
-                    <a href="#portfolioModal9" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="assets/NetBuilderBD.png" class="img-responsive" alt="Above PSD Template Design">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Above</h4>
-                        <p class="text-muted">PSD Template Design</p>
-                    </div>
-                </div> -->
-            <!-- </div>
-        </div>
-    </section> -->
-
-
-        <!-- Contact Section -->
-    <!-- <section id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Contact Us</h2>
-                </div>
-            </div>
-            <div class="row">
                 <div class="col-lg-12 contact">
-                    <form action="https://formspree.io/f/mjkvkawa" method="POST">
-                        <input type="text" placeholder="Name" name="first" id="name" required><br>
-                        <input type="email" placeholder="Email" name="last" id="email" required><br>
-                        <input type="phone" placeholder="Phone" name="phone" id="phone" required><br>
-                        <input type="text" placeholder="Subject" name="subject" id="subject" required><br>
-                        <textarea row="10" cols="60" name="message" placeholder="Type Message" name="message" id="message" required></textarea><br>
-                        <button name="submit" id="submit">Send Message</button>
-                    </form>
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
+
+
+
 
 
     
@@ -328,12 +154,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <a href="#page-top" class="netbuilderfacebook page-scroll">
-                        <img src="https://play-lh.googleusercontent.com/ye3apV1gnIv6VThoz_gT2sQXzskgLYOsQWrXdydaR6gfB11yr5UaSStq6j4C74luusc=s94-rw" width="70px" height="70px" alt="">
+                    <a href="index.html" class="netbuilderfacebook page-scroll">
+                        <img src="assets/logo.png" width="70px" height="70px" alt="">
                     </a>
                 </div>
                 <div class="col-md-12">
-                    <span class="copyright">Copyright &copy; Fahadin Developer - 2019</span>
+                    <span class="copyright">Copyright &copy; Petto Store BD</span>
                 </div>
             </div>
         </div>
@@ -341,7 +167,7 @@
     <a href="#" class="scrollToTop">
         <i class="fa fa-chevron-circle-up" aria-hidden="true"></i>
     </a>
-    <a class="scrollSocial" href="https://www.facebook.com/netbuilderbd/" target="_blank">
+<!--     <a class="scrollSocial" href="https://www.facebook.com/netbuilderbd/" target="_blank">
         <ul>
           <li class="facebook">
             <i class="fa fa-facebook linkfacebook" aria-hidden="true"></i>
@@ -350,7 +176,7 @@
             </div>
           </li>
         </ul>
-    </a>
+    </a> -->
 
  
 
